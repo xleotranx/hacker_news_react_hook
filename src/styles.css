@@ -1,0 +1,96 @@
+#root > header {
+  margin-bottom: 50px;
+}
+#root > footer {
+  margin-top: 50px;
+}
+
+nav[role="navigation"] ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav[role="navigation"] a {
+  margin-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+nav[role="navigation"] a:hover,
+nav[role="navigation"] a.selected {
+  text-decoration: none;
+  border-bottom: 2px solid #41adff;
+  cursor: pointer;
+}
+
+.post-title {
+  margin-top: 32px;
+  color: #dbdbdb;
+  font-size: 18px;
+  display: block;
+}
+.post-title:hover {
+  text-decoration: none;
+}
+.post-title + p {
+  margin-top: 4px;
+}
+.post-subtitle {
+  font-size: 14px;
+}
+
+.post-user,
+.post-comment {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.paging {
+  margin: 0;
+  margin-top: 36px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.paging li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.toggle {
+  color: #41adff;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.toggle::before {
+  content: " [-] ";
+}
+.toggle.closed + .comments,
+.toggle.closed + .comment__content {
+  display: none;
+}
+.toggle.closed::before {
+  content: " [+] ";
+}
+
+.comments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 1px solid #d2d2d2;
+}
+.comments .comments {
+  margin: 32px;
+}
+
+.comment {
+  margin-top: 32px;
+}
+
+.meta {
+  color: #aaa;
+}

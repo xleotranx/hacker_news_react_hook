@@ -1,2 +1,4 @@
 # hacker_news_react_hook
-Created with CodeSandbox
+Hacker News Example (React Hooks/Navi Router)
+
+Demo Netlify: https://hackernew.netlify.com/
